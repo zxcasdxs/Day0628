@@ -104,13 +104,12 @@ try {
     
   }//end
 
-  public void map() { //printAll()=list()=display()
+  public void map() { 
     System.out.println("\t[호텔 투숙 상태]");
     for(int floor = 0; floor < name.length; floor++) {
     for(int n = 0; n < name[0].length; n++) {
       System.out.print((floor+1) + "0" + (n+1) + "\t");
 
-//      System.out.println(name[floor][room] + "\t");
     }
     System.out.println();
     
@@ -125,14 +124,14 @@ try {
 }//for E
   }//end
 
-  public void list() { //영림쌤 구현해서 보여드리겠습니다 
+  public void list() {
     System.out.println("\t[호텔 투숙 상태]");
     for(int floor = 0; floor < name.length; floor++) {
     for(int room = 0; room <name[0].length; room++) {
       if(name[floor][room] == null) {
-        System.out.print((floor+1) + "0" + (room+1) +"호□ " + "\t");
+        System.out.print((floor+1) + "0" + (room+1) +"호 □ " + "\t");
       } if(name[floor][room] != null) {
-      System.out.print((floor+1) + "0" + (room+1) +"호■ " + "\t");
+      System.out.print((floor+1) + "0" + (room+1) +"호 ■ "+ name[floor][room] + "\t");
     }
     }System.out.println();
     

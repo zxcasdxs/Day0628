@@ -1,13 +1,23 @@
 package net.hb.day0628;
 
 public class Child extends Father{
+  
+  //Father 소속 car()메소드 호출
+  //child 소속 ()car 메소드 호출
 
   public static void main(String[] args) {
-    //모든클래스 최상위 Object클래스의 상속을 받았음.
-    Child cd = new Child();
-    int a = cd.bank();
+    Child ck = new Child();
   }
 
-  public void book() {int m = bank(); }
-  
+  public void book() {
+  super.car();
+  this.car();
+  }
+
+
+  @Override
+  public void car(){
+    System.out.println("child");
+  }
+
 }
